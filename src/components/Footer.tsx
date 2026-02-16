@@ -7,14 +7,14 @@ const footerLinks = {
     { name: 'Stratégie digitale', href: '/services' },
     { name: 'Branding', href: '/services' },
     { name: 'Digital', href: '/services' },
-    { name: 'Production audiovisuelle', href: '/services' },
-    { name: 'Événementiel', href: '/services' },
+    // { name: 'Production audiovisuelle', href: '/services' },
+    // { name: 'Événementiel', href: '/services' },
     { name: 'Consulting', href: '/services' },
   ],
   company: [
     { name: 'À propos', href: '/about' },
-    { name: 'Notre équipe', href: '/about' },
-    { name: 'Carrières', href: '#' },
+    // { name: 'Notre équipe', href: '/about' },  
+    // { name: 'Carrières', href: '#' },
     { name: 'Contact', href: '/contact' },
   ],
   legal: [
@@ -71,11 +71,11 @@ export function Footer() {
                 className="flex items-center gap-3 text-white/60 hover:text-emerald-400 transition-colors"
               >
                 <Phone size={18} />
-                <span>+33 1 23 45 67 89</span>
+                <span>+212 6 58 06 04 60</span>
               </a>
               <div className="flex items-center gap-3 text-white/60">
                 <MapPin size={18} />
-                <span>Paris, France</span>
+                <span>Casablanca, Maroc</span>
               </div>
             </div>
           </div>
