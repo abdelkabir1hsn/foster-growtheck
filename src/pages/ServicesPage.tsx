@@ -30,7 +30,7 @@ const services = [
  
   {
     icon: Globe,
-    title: 'Digital',
+    title: 'Développement web',
     description: 'Développez votre présence en ligne avec des sites web, applications et expériences digitales de haute qualité.',
     color: 'from-emerald-500 to-teal-500',
     features: [
