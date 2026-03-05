@@ -10,7 +10,8 @@ const testimonials = [
     role: 'Directrice',
     company: 'Riad Marrakech Luxury',
     image: 'F',
-    content: 'Foster Growthec a transformé notre présence digitale à Marrakech. Leur expertise en marketing digital local a augmenté nos réservations de 50% en 6 mois.',
+    content:
+      'Foster Growthec a transformé notre présence digitale à Marrakech. Leur expertise en marketing digital local a augmenté nos réservations de 50% en 6 mois.',
     rating: 5,
   },
   {
@@ -19,7 +20,8 @@ const testimonials = [
     role: 'Gérant',
     company: 'Tech Hub Casablanca',
     image: 'K',
-    content: 'Une équipe marocaine qui comprend le marché local. Leur stratégie digitale adaptée aux clients marocains a doublé notre clientèle.',
+    content:
+      'Une équipe marocaine qui comprend le marché local. Leur stratégie digitale adaptée aux clients marocains a doublé notre clientèle.',
     rating: 5,
   },
   {
@@ -28,7 +30,8 @@ const testimonials = [
     role: 'Fondatrice',
     company: 'Cosmétiques Naturels Fès',
     image: 'Z',
-    content: 'Foster Growthec a développé notre présence sur les réseaux sociaux marocains. Nos produits sont maintenant reconnus dans tout le Maroc.',
+    content:
+      'Foster Growthec a développé notre présence sur les réseaux sociaux marocains. Nos produits sont maintenant reconnus dans tout le Maroc.',
     rating: 5,
   },
   {
@@ -37,7 +40,8 @@ const testimonials = [
     role: 'PDG',
     company: 'Import-Export Tanger',
     image: 'M',
-    content: 'Leur plateforme e-commerce adaptée au marché marocain a transformé notre business. Excellente compréhension des clients locaux.',
+    content:
+      'Leur plateforme e-commerce adaptée au marché marocain a transformé notre business. Excellente compréhension des clients locaux.',
     rating: 5,
   },
   {
@@ -46,7 +50,8 @@ const testimonials = [
     role: 'Responsable Marketing',
     company: 'Resort Agadir',
     image: 'N',
-    content: 'Foster Growthec a géré notre campagne digitale avec professionnalisme. Résultats exceptionnels et équipe réactive aux besoins marocains.',
+    content:
+      'Foster Growthec a géré notre campagne digitale avec professionnalisme. Résultats exceptionnels et équipe réactive aux besoins marocains.',
     rating: 5,
   },
 ];
@@ -85,27 +90,27 @@ export function Testimonials() {
   return (
     <section className="section-padding relative overflow-hidden bg-gradient-section">
       {/* Background decoration */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#5b9c00]/[0.05] rounded-full blur-[150px] pointer-events-none" />
 
       <div className="container-custom relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <SectionReveal>
-            <span className="inline-block px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-[#5b9c00]/10 border border-[#5b9c00]/20 text-[#5b9c00] text-sm font-medium mb-6">
               Témoignages
             </span>
           </SectionReveal>
-          
+
           <SectionReveal delay={0.1}>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
               Ce que disent nos <span className="gradient-text">clients</span>
             </h2>
           </SectionReveal>
-          
+
           <SectionReveal delay={0.2}>
             <p className="text-lg text-white/60">
-              Découvrez les retours d'expérience de nos clients qui nous font confiance 
-              pour leur croissance digitale.
+              Découvrez les retours d'expérience de nos clients qui nous font confiance pour leur
+              croissance digitale.
             </p>
           </SectionReveal>
         </div>
@@ -114,7 +119,7 @@ export function Testimonials() {
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Quote Icon */}
-            <Quote className="absolute -top-6 -left-4 w-16 h-16 text-emerald-500/20" />
+            <Quote className="absolute -top-6 -left-4 w-16 h-16 text-[#5b9c00]/20" />
 
             {/* Slider Content */}
             <div className="relative h-[400px] sm:h-[350px] overflow-hidden">
@@ -132,11 +137,11 @@ export function Testimonials() {
                   }}
                   className="absolute inset-0"
                 >
-                  <div className="glass rounded-3xl p-8 sm:p-12 h-full flex flex-col justify-center">
+                  <div className="glass rounded-3xl p-8 sm:p-12 h-full flex flex-col justify-center hover:border-[#5b9c00]/30 transition-colors duration-300">
                     {/* Rating */}
                     <div className="flex gap-1 mb-6">
                       {[...Array(currentTestimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-lime-500 text-lime-500" />
+                        <Star key={i} className="w-5 h-5 fill-[#5b9c00] text-[#5b9c00]" />
                       ))}
                     </div>
 
@@ -150,12 +155,10 @@ export function Testimonials() {
                       <img
                         src={currentTestimonial.image}
                         alt={currentTestimonial.name}
-                        className="w-14 h-14 rounded-full object-cover border-2 border-emerald-500/30"
+                        className="w-14 h-14 rounded-full object-cover border-2 border-[#5b9c00]/30"
                       />
                       <div>
-                        <div className="font-semibold text-white">
-                          {currentTestimonial.name}
-                        </div>
+                        <div className="font-semibold text-white">{currentTestimonial.name}</div>
                         <div className="text-white/60 text-sm">
                           {currentTestimonial.role}, {currentTestimonial.company}
                         </div>
@@ -179,7 +182,7 @@ export function Testimonials() {
                     }}
                     className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                       index === currentIndex
-                        ? 'w-8 bg-emerald-500'
+                        ? 'w-8 bg-[#5b9c00]'
                         : 'bg-white/20 hover:bg-white/40'
                     }`}
                     aria-label={`Go to testimonial ${index + 1}`}
@@ -191,7 +194,7 @@ export function Testimonials() {
               <div className="flex gap-3">
                 <motion.button
                   onClick={() => paginate(-1)}
-                  className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-emerald-500/20 hover:border-emerald-500/30 transition-colors"
+                  className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#5b9c00]/20 hover:border-[#5b9c00]/30 transition-colors"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label="Previous testimonial"
@@ -200,7 +203,7 @@ export function Testimonials() {
                 </motion.button>
                 <motion.button
                   onClick={() => paginate(1)}
-                  className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-emerald-500/20 hover:border-emerald-500/30 transition-colors"
+                  className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#5b9c00]/20 hover:border-[#5b9c00]/30 transition-colors"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label="Next testimonial"

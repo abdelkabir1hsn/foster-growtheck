@@ -56,9 +56,7 @@ export function Navigation() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}
               />
-              <span className="text-xl font-bold text-white hidden sm:block">
-                Foster <span className="gradient-text">Growthec</span>
-              </span>
+             
             </Link>
 
             {/* Desktop Navigation */}

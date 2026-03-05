@@ -4,6 +4,8 @@ import { Toaster } from 'sonner';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { useLenis } from '@/hooks/useLenis';
+import SplashCursor from '@/components/SplashCursor';
+
 
 // Sections
 import { Hero } from '@/sections/Hero';
@@ -87,6 +89,7 @@ function AppContent() {
 
   return (
     <div className="min-h-screen bg-charcoal-950">
+      <SplashCursor />
       <Navigation />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>

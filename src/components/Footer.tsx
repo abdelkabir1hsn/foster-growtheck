@@ -48,9 +48,7 @@ export function Footer() {
                 alt="Foster Growthec"
                 className="h-12 w-auto"
               />
-              <span className="text-xl font-bold text-white">
-                Foster <span className="gradient-text">Growthec</span>
-              </span>
+              
             </Link>
             <p className="text-white/60 mb-6 max-w-sm">
               Nous accompagnons les entreprises dans leur transformation digitale 
